@@ -3,17 +3,17 @@
 # разделённых пробелом и снова нажать Enter. Сумма вновь введённых чисел будет
 # добавляться к уже подсчитанной сумме.
 
-def my_func(*args):
+def my_func():
+    sum = 0
     while input('Для продолжения работы нажмите Enter, для окончания введите q') != 'q':
-        nums1 = list(input('Введите числа, разделенные пробелом: ').split())
-        nums2 = []
-        sum = 0
+        nums1 = input('Введите числа, разделенные пробелом: ').split()
         for num in nums1:
-            sum = sum + int(num)
-            nums2.append(num)
-        sum2
-
-        print(sum2)
+            try:
+                sum = sum + int(num)
+            except ValueError:
+                print(f'{num} – не число. Не подвергается суммированию.')
+        print(f'Текущая сумма – {sum}')
+    return(print(f'Окончательная сумма – {sum}. Отличная работа!'))
 
 my_func()
 
