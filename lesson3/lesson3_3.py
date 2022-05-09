@@ -4,10 +4,9 @@
 def my_func(a, b, c):
     list1 = [a, b, c]
     list1.remove(min(list1))
-    list1 = sum(list1)
-    return print(list1)
+    return print(f'The summary of the two biggest numbers is: {sum(list1)}')
 
-my_func(int(input()), int(input()), int(input()))
+my_func(int(input('Enter first number: ')), int(input('Enter second number: ')), int(input('Enter third number: ')))
 
 
 
