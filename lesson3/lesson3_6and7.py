@@ -7,3 +7,13 @@
 # исходной строки, но каждое слово должно начинаться с заглавной буквы. Используйте
 # написанную ранее функцию int_func().
 
+def int_func(*args):
+    args = input('Введите строку в нижнем регистре: ').split()
+    for i in args:
+        # try:
+         print((i.capitalize()), end=' ')
+        # except AttributeError:
+        #     print(f'\nВы ввели цифру: {i}.')
+    # print((i.capitalize()), end=' ')
+
+int_func()
