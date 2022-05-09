@@ -8,6 +8,8 @@ def my_func():
     while input('Для продолжения работы нажмите Enter, для окончания введите q.') != 'q':
         nums1 = input('Введите числа, разделенные пробелом: ').split()
         for num in nums1:
+            if num == 'q':
+                return(print(f'Окончательная сумма – {sum}. Отличная работа!'))
             try:
                 sum = sum + int(num)
             except ValueError:
