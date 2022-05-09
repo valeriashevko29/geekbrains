@@ -8,12 +8,12 @@
 # написанную ранее функцию int_func().
 
 def int_func(*args):
-    args = input('Введите строку в нижнем регистре: ').split()
-    for i in args:
-        # try:
-         print((i.capitalize()), end=' ')
-        # except AttributeError:
-        #     print(f'\nВы ввели цифру: {i}.')
-    # print((i.capitalize()), end=' ')
+    args = input('Введите строку в нижнем регистре, латиница: ').split()
+    for word in args:
+        char = 0
+        for letter in word:
+            if 97 <= ord(letter) <= 122:
+                char += 1
+        print(word.capitalize(), end= ' ') if len(word) == char else print('\nSmall English letters only!')
 
 int_func()
