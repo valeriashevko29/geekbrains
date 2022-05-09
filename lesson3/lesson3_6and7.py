@@ -14,6 +14,17 @@ def int_func(*args):
         for letter in word:
             if 97 <= ord(letter) <= 122:
                 char += 1
+        # здесь в принт выводится цифра, если она есть в тексте
+        # print(word.capitalize(), end= ' ') if len(word) == char else print(word, end=' ')
+        # здесь, как по заданию
         print(word.capitalize(), end= ' ') if len(word) == char else print('\nSmall English letters only!')
 
+
 int_func()
+
+
+
+# Решение с ascii (сохранила для себя)
+
+# int_func = lambda word: word.title() if word.islower() and ascii(word)[1:-1].isalpha() else ''
+# print(' _ '.join(map(int_func, input('Enter a phrase: '). split())))
