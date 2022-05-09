@@ -5,7 +5,7 @@
 # Осуществить вывод данных о пользователе одной строкой.
 
 def my_f(name, surname, birth, city, email, tel):
-    return print(f'Имя: {name}, Фамилия: {surname}, Город: {city}, E-mail: {email}, Тел.: {tel}')
+    return print(f'Имя: {name}, Фамилия: {surname}, ДР: {birth}, Город: {city}, E-mail: {email}, Тел.: {tel}')
 
 my_f(name=input('Введите имя: '),
      surname=input('Введите фамилию: '),
