@@ -8,6 +8,12 @@ list1 = [i for i in range(100, 1001) if i % 2 == 0]
 res = reduce(lambda x, y: x * y, list1)
 print(res)
 
+# после разбора д/з...
+
+list2 = [a for a in range(100, 1001, 2)]
+res1 = reduce(lambda x, y: x * y, list1)
+print(res1)
+
 
 
 
