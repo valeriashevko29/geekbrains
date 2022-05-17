@@ -8,3 +8,12 @@
 my_list = [2, 2, 2, 7, 23, 1, 44, 44, 3, 2, 10, 7, 4, 11]
 new_list = [i for i in my_list if my_list.count(i) == 1]
 print(new_list)
+
+# после разбора д/з
+
+my_list = [2, 2, 2, 7, 23, 1, 44, 44, 3, 2, 10, 7, 4, 11]
+my_dict = {a: 0 for a in my_list}
+for a in my_list:
+    my_dict[a] = my_dict[a] + 1
+new_list1 = [a for a in my_list if my_dict[a] == 1]
+print(new_list1)
